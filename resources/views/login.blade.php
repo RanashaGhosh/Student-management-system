@@ -8,11 +8,11 @@
 
 </head>
 
-<body>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
 
-<div class="container mt-5">
+<div class="card shadow p-4" style="width:350px">
 
-<h2>Login</h2>
+<h3 class="text-center mb-3">Admin Login</h3>
 
 @if(session('error'))
 <div class="alert alert-danger">
@@ -20,7 +20,7 @@
 </div>
 @endif
 
-<form action="/login" method="POST">
+<form method="POST" action="/login">
 
 @csrf
 
@@ -34,7 +34,7 @@
 <input type="password" name="password" class="form-control">
 </div>
 
-<button type="submit" class="btn btn-primary">Login</button>
+<button class="btn btn-primary w-100">Login</button>
 
 </form>
 
