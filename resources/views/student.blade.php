@@ -69,6 +69,7 @@
         <th>Name</th>
         <th>Email</th>
         <th>Course</th>
+        <th colspan="2">Actions</th>
     </tr>
     </thead>
 
